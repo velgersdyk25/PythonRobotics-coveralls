@@ -3,18 +3,20 @@ coverage:
     project:
       default:
         target: 80%        # Minimum threshold
-        threshold: 0.1%    # Allowed drop before failing
+        threshold: 0%    # Allowed drop before failing
         if_not_found: failure
         informational: false
+        base: parent
     patch:
       default:
         target: 85%
         threshold: 0%
         if_not_found: fail
         informational: false
+        base: parent
 
 comment:
   layout: "reach, diff, flags, files"
   behavior: default
-  require_changes: true
+  require_changes: false
 
