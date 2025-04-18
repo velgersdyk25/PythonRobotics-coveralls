@@ -1,8 +1,21 @@
+codecov:
+ token: 92175b52-f478-418e-bca0-33761b64b776
 coverage:
   status:
     project:
       default:
         target: 80%
-        informational: false  # 👈 This makes it a hard fail
+        threshold: 0.1%
+        informational: false
+    patch:
+      default:
+        target: 80%
+        threshold: 0.1%
+        informational: false
+
+comment:
+  layout: "reach, diff, files"
+  require_changes: true
+
 
 

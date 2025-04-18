@@ -35,3 +35,5 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: velgersdyk25/PythonRobotics-coveralls
+          fail_ci_if_error: true               # Fails if upload or check fails
+
