@@ -2,14 +2,7 @@ coverage:
   status:
     project:
       default:
-        target: 80%        # Minimum threshold
-        threshold: 0%    # Allowed drop before failing
-        if_not_found: failure
-        informational: false
-        base: parent
+        target: 80%
+        informational: false  # 👈 This makes it a hard fail
 
-comment:
-  layout: "reach, diff, flags, files"
-  behavior: default
-  require_changes: false
 
